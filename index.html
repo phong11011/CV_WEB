@@ -14,11 +14,14 @@
       content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Sunshine, portfolio"
     />
     <meta name="author" content="lmtheme" />
-    <meta
-      property="og:image"
-      content="images\photo_small.png"
-    />
+    <meta property="og:image" content="images\photo_small.png" />
     <link rel="shortcut icon" href="favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
     <link rel="stylesheet" href="css\bootstrap.css" />
     <link rel="stylesheet" href="css\normalize.css" />
@@ -26,6 +29,7 @@
     <link rel="stylesheet" href="css\owl.carousel.css" />
     <link rel="stylesheet" href="css\magnific-popup.css" />
     <link rel="stylesheet" href="css\animate.css" />
+    <link rel="stylesheet" href="css\style.css" />
     <link rel="stylesheet" href="css\main.css" type="text/css" />
 
     <!-- This styles needs for demo -->
@@ -36,7 +40,10 @@
     />
     <!-- /This styles needs for demo -->
 
-    <script>
+    <script
+      src="https://kit.fontawesome.com/1a0a75a864.js"
+      crossorigin="anonymous"
+    >
       (function (i, s, o, g, r, a, m) {
         i["GoogleAnalyticsObject"] = r;
         (i[r] =
@@ -77,11 +84,44 @@
     </div>
     <!-- /Loading animation -->
 
+    <header>
+      <div class="wrapper">
+        <nav>
+          <input type="checkbox" id="show-search" />
+          <input type="checkbox" id="show-menu" />
+          <label for="show-menu" class="menu-icon"
+            ><i class="fas fa-bars"></i
+          ></label>
+          <div class="content">
+            <div class="logo"><a href="#">Quốc Phong</a></div>
+            <ul class="links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <label for="show-search" class="search-icon">
+            <i class="fas fa-search"></i>
+          </label>
+          <form action="#" class="search-box">
+            <input
+              type="text"
+              placeholder="Type Something to Search..."
+              required
+            />
+            <button type="submit" class="go-icon">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </button>
+          </form>
+        </nav>
+      </div>
+    </header>
+
     <div id="page" class="page">
       <!-- Header -->
       <header id="site_header" class="header">
         <div class="my-photo">
-          <img src="images\my_photo.jpg" alt="image" />
+          <img src="images\my_photo.jpg" alt="image" style="z-index: 0" />
           <div class="mask"></div>
         </div>
 
@@ -309,17 +349,17 @@
                   </div>
                 </div>
 
-                <!-- <div class="col-sm-6 col-md-3 subpage-block">
-                  <div class="service-block"> 
+                <div class="col-sm-6 col-md-3 subpage-block">
+                  <div class="service-block">
                     <div class="service-info">
-                      <img src="images\service\copywrite.png" alt="Copywriter">
-                      <h4>Copywriter</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                      <img src="images\service\pentest.png" alt="Copywriter" />
+                      <h4>Pentest</h4>
+                      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p> -->
                     </div>
                   </div>
                 </div>
 
-                <div class="col-sm-6 col-md-3 subpage-block">
+                <!--  <div class="col-sm-6 col-md-3 subpage-block">
                   <div class="service-block"> 
                     <div class="service-info">
                       <img src="images\service\ecommerce.png" alt="E-Commerce">
@@ -604,6 +644,7 @@
                       <img src="images\portfolio\1.jpg" alt="" />
                       <div>
                         <h5 class="name">Project Name</h5>
+                        <p style="color: white">Phong đẹp trai</p>
                         <small>Media</small>
                         <i class="fa fa-file-text-o"></i>
                       </div>
@@ -621,6 +662,7 @@
                       <img src="images\portfolio\2.jpg" alt="" />
                       <div>
                         <h5 class="name">Project Name</h5>
+                        <p style="color: white">Phong đẹp trai</p>
                         <small>Video</small>
                         <i class="fa fa-video-camera"></i>
                       </div>
@@ -638,6 +680,7 @@
                       <img src="images\portfolio\3.jpg" alt="" />
                       <div>
                         <h5 class="name">Project Name</h5>
+                        <p style="color: white">Phong đẹp trai</p>
                         <small>Illustration</small>
                         <i class="fa fa-image"></i>
                       </div>
@@ -651,6 +694,7 @@
                       <img src="images\portfolio\4.jpg" alt="" />
                       <div>
                         <h5 class="name">Project Name</h5>
+                        <p style="color: white">Phong đẹp trai</p>
                         <small>Media</small>
                         <i class="fa fa-file-text-o"></i>
                       </div>
@@ -668,6 +712,7 @@
                       <img src="images\portfolio\5.jpg" alt="" />
                       <div>
                         <h5 class="name">Project Name</h5>
+                        <p style="color: white">Phong đẹp trai</p>
                         <small>Illustration</small>
                         <i class="fa fa-image"></i>
                       </div>
@@ -681,6 +726,7 @@
                       <img src="images\portfolio\6.jpg" alt="" />
                       <div>
                         <h5 class="name">Project Name</h5>
+                        <p style="color: white">Phong đẹp trai</p>
                         <small>Media</small>
                         <i class="fa fa-file-text-o"></i>
                       </div>
@@ -698,6 +744,7 @@
                       <img src="images\portfolio\7.jpg" alt="" />
                       <div>
                         <h5 class="name">Project Name</h5>
+                        <p style="color: white">Phong đẹp trai</p>
                         <small>Video</small>
                         <i class="fa fa-video-camera"></i>
                       </div>
@@ -711,6 +758,7 @@
                       <img src="images\portfolio\8.jpg" alt="" />
                       <div>
                         <h5 class="name">Project Name</h5>
+                        <p style="color: white">Phong đẹp trai</p>
                         <small>Media</small>
                         <i class="fa fa-file-text-o"></i>
                       </div>
@@ -728,6 +776,7 @@
                       <img src="images\portfolio\9.jpg" alt="" />
                       <div>
                         <h5 class="name">Project Name</h5>
+                        <p style="color: white">Phong đẹp trai</p>
                         <small>Illustration</small>
                         <i class="fa fa-image"></i>
                       </div>
@@ -745,6 +794,7 @@
                       <img src="images\portfolio\10.jpg" alt="" />
                       <div>
                         <h5 class="name">Project Name</h5>
+                        <p style="color: white">Phong đẹp trai</p>
                         <small>Video</small>
                         <i class="fa fa-video-camera"></i>
                       </div>
@@ -762,6 +812,7 @@
                       <img src="images\portfolio\11.jpg" alt="" />
                       <div>
                         <h5 class="name">Project Name</h5>
+                        <p style="color: white">Phong đẹp trai</p>
                         <small>Illustration</small>
                         <i class="fa fa-image"></i>
                       </div>
@@ -775,6 +826,7 @@
                       <img src="images\portfolio\12.jpg" alt="" />
                       <div>
                         <h5 class="name">Project Name</h5>
+                        <p style="color: white">Phong đẹp trai</p>
                         <small>Media</small>
                         <i class="fa fa-file-text-o"></i>
                       </div>
@@ -1222,6 +1274,71 @@
       <div class="row"></div>
     </div>
     <!-- /Demo Color changer -->
+
+    <footer style="color: black; opacity: 1">
+      <div class="main-content">
+        <div class="left box">
+          <h2 style="color: white">About me</h2>
+          <div class="content">
+            <p>
+              My name is Phong. I'm from Can Tho City. Welcome to my website,
+              this is my project in VNCERT. I use HTML/CSS/JS and Responsive
+            </p>
+            <div class="social">
+              <a href="#"><span class="fab fa-facebook-f"></span></a>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+              <a href="#"><span class="fab fa-instagram"></span></a>
+              <a href="#"><span class="fab fa-youtube"></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="center box">
+          <h2 style="color: white">Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Thanh Trì, Hà Nội</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">0902 269 417</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">phongmadev@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="right box">
+          <h2 style="color: white">Contact me</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <!-- <div class="text">Email *</div> -->
+                <label for="Email" class="text">Email *</label>
+                <input type="email" id="Email" required />
+              </div>
+              <div class="msg">
+                <!-- <div class="text">Message *</div> -->
+                <label for="Message" class="text">Message *</label>
+                <textarea rows="2" cols="25" id="Message" required></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <center>
+          <span class="credit">Created By Quốc Phong | </span>
+          <span class="far fa-copyright"></span><span> Kit Mien Nam.</span>
+        </center>
+      </div>
+    </footer>
 
     <script
       data-cfasync="false"

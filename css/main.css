@@ -475,11 +475,11 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .my-photo {
-  position: absolute;
+  position: relative;
   height: 100%;
   width: 100%;
   text-align: center;
-  z-index: 0;
+  z-index: 100;
 }
 
 .my-photo-small {
@@ -489,13 +489,14 @@ textarea.form-control, textarea.form-control:focus {
 .my-photo img {
   display: block;
   margin: 0 auto;
-  height: 100%;
+  height: 60%;
   max-width: none;
-  min-height: 550px;
+  min-height: 494px;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
+  z-index: 11;
 }
 
 .my-photo .mask {
@@ -1831,9 +1832,19 @@ blockquote {
   font-size: 12px;
 }
 
+/* ============================================================================= 
+11. footer 
+============================================================================= */
+/* footer{
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+  z-index: 0;
+} */
 
 /* ============================================================================= 
-11. Media Queries 
+12. Media Queries 
 ============================================================================= */
 
 @media only screen and (max-width: 1200px) {
@@ -1883,6 +1894,7 @@ blockquote {
 
   .my-photo {
     display: none;
+    z-index: 1;
   }
 
   .my-photo img {
