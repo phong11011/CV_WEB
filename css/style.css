@@ -33,7 +33,7 @@ body {
 /* menu của web */
 header {
   height: 83px;
-  margin-bottom: -13px;
+  margin-bottom: -10px;
   position: relative;
   z-index: 10;
 }
@@ -750,7 +750,7 @@ button {
     max-width: 1400px;
   }
   footer{
-    position: absolute;
+    position: relative;
     bottom: 0px;
   }
   .main-content{
